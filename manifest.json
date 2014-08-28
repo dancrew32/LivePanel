@@ -1,0 +1,17 @@
+{
+	"name": "livepanel",
+	"version": "1.0.0",
+	"description": "Keep Mixpanel's Live View Alive.",
+	"homepage_url": "https://github.com/dancrew32/livepanel",
+	"manifest_version": 2,
+	"minimum_chrome_version": "36",
+	"icons": {"128": "icon.png"},
+	"permissions": ["https://mixpanel.com/*/*"],
+	"content_scripts": [
+		{
+			"run_at": "document_end",
+			"matches": ["https://mixpanel.com/*/*/"],
+			"js": ["content.js"]
+		}
+	]
+}
