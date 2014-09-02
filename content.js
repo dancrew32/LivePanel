@@ -7,7 +7,9 @@
 	var watch = function() {
 		var context = $('#live');
 		var click = function() {
-			$('.refresh_row', context).click()
+			var current_focus = $(':focus');
+			if (!current_focus.is('textarea, input'))
+				$('.refresh_row', context).click()
 		};
 		setInterval(click, 2000);
 	};
