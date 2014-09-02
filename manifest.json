@@ -1,6 +1,6 @@
 {
 	"name": "livepanel",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"description": "Keep Mixpanel's Live View Alive.",
 	"homepage_url": "https://github.com/dancrew32/livepanel",
 	"manifest_version": 2,
